@@ -7,11 +7,33 @@
     <groupId>com.tiv</groupId>
     <artifactId>mini-mall</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>mini-mall-common</module>
+        <module>mini-mall-inventory</module>
+        <module>mini-mall-coupon</module>
+        <module>mini-mall-order</module>
+        <module>mini-mall-product</module>
+        <module>mini-mall-member</module>
+        <module>mini-mall-pay</module>
+        <module>mini-mall-marketing</module>
+        <module>mini-mall-gateway</module>
+        <module>mini-mall-search</module>
+        <module>mini-mall-seckill</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.5.4</version>
+        <relativePath/>
+    </parent>
 
 </project>
